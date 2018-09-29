@@ -138,7 +138,7 @@
 
 (select student :where #(> (:id %) 1) :limit 1)
 ;; => ({:id 2, :year 1997, :surname "Petrov"})
-;; this is invakid line
+
 (select student :where #(> (:id %) 1) :order-by :year :limit 2)
 ;; => ({:id 3, :year 1996, :surname "Sidorov"} {:id 2, :year 1997, :surname "Petrov"})
 
