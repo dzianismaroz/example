@@ -148,4 +148,4 @@
 (select student-subject :limit 2 :joins [[:student_id student :id] [:subject_id subject :id]])
 ;; => ({:subject "Math", :subject_id 1, :surname "Ivanov", :year 1998, :student_id 1, :id 1} {:subject "Math", :subject_id 1, :surname "Petrov", :year 1997, :student_id 2, :id 2})
 
-
+;; end of file
