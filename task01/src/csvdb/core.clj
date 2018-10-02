@@ -34,7 +34,7 @@
   (apply hash-map (key-value-pairs tbl-keys tbl-record)))
 
 
- (data-table student-tbl)
+ ;; (data-table student-tbl)
 ;; => ({:surname "Ivanov", :year "1996", :id "1"}
 ;;     {:surname "Petrov", :year "1996", :id "2"}
 ;;     {:surname "Sidorov", :year "1997", :id "3"})
@@ -124,7 +124,7 @@
       (order-by* order-by)
       (limit* limit)))
 
-(select student)
+;; (select student)
 ;; => [{:id 1, :year 1998, :surname "Ivanov"} {:id 2, :year 1997, :surname "Petrov"} {:id 3, :year 1996, :surname "Sidorov"}]
 
 (select student :order-by :year)
